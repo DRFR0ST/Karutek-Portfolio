@@ -1,9 +1,9 @@
 .header {
 	width: 100vw;
 	max-width: 100%;
-	background-color: #65d7c0;  /* fallback for old browsers */
-	background-color: -webkit-linear-gradient(to right top, #65d7c0, #5acbb4, #50bfa9, #45b49d, #3aa892);  /* Chrome 10-25, Safari 5.1-6 */
-	background-color: linear-gradient(to right top, #65d7c0, #5acbb4, #50bfa9, #45b49d, #3aa892); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #1d976c;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(0.90turn, #1d976c, #93f9b9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(0.90turn, #1d976c, #93f9b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 	height: 300px;
