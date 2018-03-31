@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Navbar } from 'react-materialize';
+import { Navbar, NavItem, SideNav, Icon, SideNavItem, Button } from 'react-materialize';
 
 import avatar from '../../images/avatar.jpg'
 
@@ -8,9 +8,14 @@ class Header extends Component {
 		return (
 			<div>
 				<div className="header">
-					<Navbar className="z-depth-0" style={{background: 'transparent'}}></Navbar>
-					<div className="avatar z-depth-1">
-						<img src={avatar} />
+					<div className="background"></div>
+					<div className="logo">
+						<div className="avatar z-depth-1">
+							<img src={avatar} />
+						</div>
+						<div className="badge z-depth-2">
+							<Icon>favorite</Icon>
+						</div>
 					</div>
 				</div>
 			</div>);

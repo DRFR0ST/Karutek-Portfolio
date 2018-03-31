@@ -1,26 +1,38 @@
 .header {
 	width: 100vw;
 	max-width: 100%;
-	background: url('../images/header_bg.png') repeat;
-	background-size: 25%;
-	background-color: #EEE;
+	background-color: #65d7c0;  /* fallback for old browsers */
+	background-color: -webkit-linear-gradient(to right top, #65d7c0, #5acbb4, #50bfa9, #45b49d, #3aa892);  /* Chrome 10-25, Safari 5.1-6 */
+	background-color: linear-gradient(to right top, #65d7c0, #5acbb4, #50bfa9, #45b49d, #3aa892); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    background-attachment: fixed;
-    background-position: center;
 
 	height: 300px;
 
 	position: relative;
 
 	margin-bottom: 80px;
+
+	box-shadow: inset 0 14px -28px rgba(0,0,0,0.25), inset 0 10px -10px rgba(0,0,0,0.22);
 }
 
-.header .avatar {
+.header .background {
+	background: url('../images/header_bg.svg') repeat;
+    background-attachment: fixed;
+    background-position: center;
+	background-size: 20%;
+	background-color: #ababab;
+	width: 100%;
+	height: 100%;
+	opacity: .15;
+}
 
+.header .logo {
 	position: absolute;
 	top: calc(95% - 75px);
 	left: calc(50vw - 90px);
+}
 
+.logo .avatar {
 	border-radius: 100%;
 	overflow: hidden;
 	width: 150px;
@@ -28,5 +40,22 @@
 }
 
 .header .avatar img {
-	transform: scale(0.5) translate(-55%, -50%);
+	transform: scale(0.5) translate(-60%, -52%);
+}
+
+.logo .badge {
+	position: absolute;
+	top: 75%;
+	left: 65%;
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	background-color: #EEEEEE;
+
+	text-align: center;
+}
+
+.badge i {
+	opacity: .4;
+	transform: translateY(48%);
 }
