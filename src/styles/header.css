@@ -1,0 +1,32 @@
+.header {
+	width: 100vw;
+	max-width: 100%;
+	background: url('../images/header_bg.png') repeat;
+	background-size: 25%;
+	background-color: #EEE;
+
+    background-attachment: fixed;
+    background-position: center;
+
+	height: 300px;
+
+	position: relative;
+
+	margin-bottom: 80px;
+}
+
+.header .avatar {
+
+	position: absolute;
+	top: calc(95% - 75px);
+	left: calc(50vw - 90px);
+
+	border-radius: 100%;
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+}
+
+.header .avatar img {
+	transform: scale(0.5) translate(-55%, -50%);
+}
