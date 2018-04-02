@@ -1,7 +1,7 @@
-<p align="center"><img src="https://media.giphy.com/media/8lEyemJZPTF9Uub3T5/giphy.gif" /></p>
-
 # 🎀 Karutek-Portfolio
 Portfolio website made for Karolina Falkowska ([Karutek](https://www.instagram.com/karuutek/))
+
+<p align="center"><img src="https://media.giphy.com/media/8lEyemJZPTF9Uub3T5/giphy.gif" /></p>
 
 
 ## Tools used
