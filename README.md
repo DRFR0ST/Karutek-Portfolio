@@ -1,3 +1,5 @@
+![Website Header](https://media.giphy.com/media/1lBLImX0FWyk8wUOaK/giphy.gif)
+
 # 🎀 Karutek-Portfolio
 Portfolio website made for Karolina Falkowska ([Karutek](https://www.instagram.com/karuutek/))
 
