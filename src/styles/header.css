@@ -12,7 +12,7 @@
 
 	margin-bottom: 80px;
 
-	box-shadow: inset 0 14px -28px rgba(0,0,0,0.25), inset 0 10px -10px rgba(0,0,0,0.22);
+	box-shadow: inset 0 -10px 20px rgba(21,21,21,0.08), inset 0 -6px 6px rgba(21,21,21,0.12);
 }
 
 .header .background {
@@ -30,6 +30,7 @@
 	position: absolute;
 	top: calc(95% - 75px);
 	left: calc(50vw - 90px);
+	transition: transform .15s ease-out;
 }
 
 .logo .avatar {
@@ -37,6 +38,7 @@
 	overflow: hidden;
 	width: 150px;
 	height: 150px;
+	cursor: pointer;
 }
 
 .header .avatar img {
@@ -53,6 +55,8 @@
 	background-color: #EEEEEE;
 
 	text-align: center;
+
+	cursor: pointer;
 }
 
 .badge i {

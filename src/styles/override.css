@@ -1,0 +1,8 @@
+.btn:hover, .btn-large:hover {
+    background-color: #49AD84;
+    color: #FFF;
+}
+
+.btn, .btn-large, .btn-flat {
+	border-radius: 35px;
+}
