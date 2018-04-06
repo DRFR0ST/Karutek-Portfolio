@@ -4,7 +4,7 @@ Portfolio website made for Karolina Falkowska ([Karutek](https://www.instagram.c
 <p align="center"><img src="https://media.giphy.com/media/8lEyemJZPTF9Uub3T5/giphy.gif" /></p>
 
 
-## Tools used
+## Dependencies
 - [react](https://github.com/facebook/react)
 - [react-materialize](https://github.com/react-materialize/react-materialize)
 - [react-router-dom](https://github.com/ReactTraining/react-router)
