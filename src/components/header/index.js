@@ -14,7 +14,7 @@ class Header extends Component {
 							<img src={avatar} />
 						</div>
 						<div className="badge z-depth-2">
-							<Icon>favorite</Icon>
+							<Icon>bubble_chart</Icon>
 						</div>
 					</div>
 				</div>

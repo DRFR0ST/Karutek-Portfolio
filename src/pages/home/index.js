@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { Row, Col, Button } from 'react-materialize';
+import { Row, Col, Button, Modal } from 'react-materialize';
 
-import { Header, About, Timeline, SocialBox } from '../../components/';
+import { Header, About, Timeline, SocialBox, Clicker, Loading, Error, Info } from '../../components/';
+
+import testmodel from '../../models/testmodel.obj';
 
 class Home extends Component {
 
@@ -21,7 +23,6 @@ class Home extends Component {
 			}
 		};
 
-
 		return (
 		<div>
 			<Header />
@@ -30,31 +31,21 @@ class Home extends Component {
 				<p className="center" style={{opacity: ".7"}}>Graphic Designer</p>
 				<br/>
 				<Row className="center">
-					<Col s={2} offset="s3"><Button flat>Home</Button></Col>
-					<Col s={2}><Button flat>Shop</Button></Col>
-					<Col s={2}><Button flat>Blog</Button></Col>
+					<Col s={2} offset="s3"><Clicker>Home</Clicker></Col>
+					<Col s={2}><Clicker>Shop</Clicker></Col>
+					<Col s={2}><Clicker>Blog</Clicker></Col>
 				</Row>
 				<hr style={{width: "35%", opacity: ".25"}} /><br/><br/><br/>
-				<About animated icon="face">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla ante, lobortis quis fermentum vel, tempus a leo. Mauris sagittis nunc ac odio tristique sagittis. In placerat, ligula sed pulvinar consectetur, leo purus tempus neque, posuere aliquam sem sapien ac ipsum. Nullam at lacinia dui. Integer at dui sapien. Aenean posuere ipsum sit amet arcu elementum consequat. Donec cursus gravida augue vel condimentum. Fusce id velit nec erat fermentum efficitur nec at nibh. Aenean augue dui, pharetra vitae dui quis, scelerisque fermentum mauris. Etiam vel consectetur dolor, ac bibendum erat. Cras tincidunt justo lacus, ut aliquet libero hendrerit nec. Ut placerat mollis dui vel elementum. Nam id elit sit amet nisi dignissim aliquet quis sit amet libero. Sed quam dolor, consectetur sed felis ac, volutpat tempus arcu. Aliquam pharetra neque in tellus bibendum fermentum. Curabitur eu laoreet nisi, non tempus leo.</About>
+				<Modal
+				  header='About me'
+				  trigger={<a style={{color: "rgb(21, 21, 21)"}}><About icon="face">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla ante, lobortis quis fermentum vel, tempus a leo. Mauris sagittis nunc ac odio tristique sagittis. In placerat, ligula sed pulvinar consectetur, leo purus tempus neque, posuere aliquam sem sapien ac ipsum. Nullam at lacinia dui. Integer at dui sapien. Aenean posuere ipsum sit amet arcu elementum consequat. Donec cursus gravida augue vel condimentum. Fusce id velit nec erat fermentum efficitur nec at nibh. Aenean augue dui, pharetra vitae dui quis, scelerisque fermentum mauris. Etiam vel consectetur dolor, ac bibendum erat. Cras tincidunt justo lacus, ut aliquet libero hendrerit nec. Ut placerat mollis dui vel elementum. Nam id elit sit amet nisi dignissim aliquet quis sit amet libero. Sed quam dolor, consectetur sed felis ac, volutpat tempus arcu. Aliquam pharetra neque in tellus bibendum fermentum. Curabitur eu laoreet nisi, non tempus leo.</About></a>}>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				</Modal>
 				<br/><br/>
 				<SocialBox social={social_media} />
 			</div>
 			<br/><br/>
-			<div className="grey lighten-5 timeline-container">
-				<div className="container">
-					<Timeline.Container>
-						<h4 className="center">What I've been working on..</h4>
-						<hr style={{width: "35%", opacity: ".25"}} />
-						<br/><br/>
-						<Timeline.Card side="left" type="model" title="Super" image="https://www.gambody.com/image/243/ravager-groot-3d-model.jpg" date={{day: "31", month: "Sept"}} description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla ante, lobortis quis fermentum vel, tempus a leo. Mauris sagittis nunc ac odio tristique sagittis. In placerat, ligula sed pulvinar consectetur, leo purus tempus neque, posuere aliquam sem sapien ac ipsum. Nullam at lacinia dui. Integer at dui sapien. Aenean posuere ipsum sit amet arcu elementum consequat." />
-						<Timeline.Card side="right" type="photo" title="Nice pic" image="https://images.unsplash.com/photo-1501021646207-ea9a55e30bea?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c389ab135c76116868c589d42d7abe4&auto=format&fit=crop&w=1350&q=80" date={{day: "14", month: "Nov"}} description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla ante, lobortis quis fermentum vel, tempus a leo. Mauris sagittis nunc ac odio tristique sagittis. In placerat, ligula sed pulvinar consectetur, leo purus tempus neque, posuere aliquam sem sapien ac ipsum. Nullam at lacinia dui. Integer at dui sapien. Aenean posuere ipsum sit amet arcu elementum consequat." />
-						<Timeline.Card side="left" type="default" title="So basic" image="https://images.unsplash.com/photo-1522202222206-b75023c48f4f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9382691bc04f781d30f6c9cb3738e91b&auto=format&fit=crop&w=1350&q=80" date={{day: "03", month: "Jun"}} description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla ante, lobortis quis fermentum vel, tempus a leo. Mauris sagittis nunc ac odio tristique sagittis. In placerat, ligula sed pulvinar consectetur, leo purus tempus neque, posuere aliquam sem sapien ac ipsum. Nullam at lacinia dui. Integer at dui sapien. Aenean posuere ipsum sit amet arcu elementum consequat." />
-						<Timeline.Card side="right" type="important" title="Very very crutial" image="https://images.unsplash.com/photo-1495249663117-4143f6ab09d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e0a3e601a50ab1cf719b974b893b6af2&auto=format&fit=crop&w=1267&q=80" date={{day: "15", month: "Jul"}} description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla ante, lobortis quis fermentum vel, tempus a leo. Mauris sagittis nunc ac odio tristique sagittis. In placerat, ligula sed pulvinar consectetur, leo purus tempus neque, posuere aliquam sem sapien ac ipsum. Nullam at lacinia dui. Integer at dui sapien. Aenean posuere ipsum sit amet arcu elementum consequat." />
-						<Timeline.Card side="left" type="extra" title="Thats some chit" image="https://images.unsplash.com/photo-1515111293107-b0cd6448f5f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e4f56141064dbe63db663bb7a2c73b71&auto=format&fit=crop&w=1350&q=80" date={{day: "23", month: "Dec"}} description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla ante, lobortis quis fermentum vel, tempus a leo. Mauris sagittis nunc ac odio tristique sagittis. In placerat, ligula sed pulvinar consectetur, leo purus tempus neque, posuere aliquam sem sapien ac ipsum. Nullam at lacinia dui. Integer at dui sapien. Aenean posuere ipsum sit amet arcu elementum consequat." />
-					</Timeline.Container>
-				</div>
-			</div>
-			<div style={{marginTop: '1000px'}} />
+			<Timeline className="grey lighten-5 timeline-container"/>
 		</div>);
 	}
 }

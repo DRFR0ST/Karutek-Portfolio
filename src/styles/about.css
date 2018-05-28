@@ -2,10 +2,10 @@
 	width: 100%;
 	min-height: 200px;
 	padding: 10px;
-	border-radius: 40px;
+	border-radius: 30px;
 	background-color: #FFF;
 
-	border: 8px solid #F5f5f5;
+	border: 8px solid rgba(0, 0, 0, .045);
 
 	padding-left: 17%;
 	padding-right: 5%;
@@ -17,7 +17,7 @@
 
 	position: relative;
 
-	cursor: pointer;
+	transition: all .3s cubic-bezier(.25,.8,.25,1) !important;
 }
 
 .about.animated {
@@ -26,7 +26,7 @@
 }
 
 .about.animated:hover {
-	transform: translateY(-2px);
+	transform: translateY(-10px);
 	transition: transform .05s ease-out;
 }
 
@@ -35,5 +35,5 @@
 	top: 50%;
 	left: 4%;
 	transform: scale(15);
-	opacity: .09;
+	opacity: .05;
 }

@@ -1,9 +1,9 @@
 .socialbox {
-	width: 80%;
+	width: 60%;
 
 	border-radius: 25px;
 
-	left:10%;
+	margin: 0 auto;
 
 	position: relative;
 	display: flex;
@@ -37,7 +37,7 @@
 }
 
 .socialbox .media.instagram {
-	background: #E8424E;
+	background: #125688;
 }
 .socialbox .media.facebook {
 	background: #3b5998;

@@ -50,6 +50,22 @@
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 
     <script>
+      var xmlhttp = new XMLHttpRequest();
+
+      xmlhttp.onreadystatechange = function() {
+          if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+              if (xmlhttp.status == 200) {
+                  window.config = JSON.parse(xmlhttp.responseText);
+              } else if (xmlhttp.status == 400) {
+                  console.log('Config file not found!');
+              } else {
+                  console.log('Unexpected error occured!');
+              }
+          }
+      };
+      xmlhttp.open("GET", "%PUBLIC_URL%/config.json", false);
+      xmlhttp.send();
+
       $(document).ready(function() {
         $('.logo').mouseup(function() {
           $('.logo').css("transform", "scale(1.15)");
